@@ -22,9 +22,9 @@ The json file should sit within the same folder as the markdown file.
 
 The plugin can be installed with `npm` or `yarn`:
 
-`npm install gatsby-transformer-remark gatsby-remark-vega`
+`npm install gatsby-transformer-remark rehype-react gatsby-remark-vega`
 
-`yarn add gatsby-transformer-remark gatsby-remark-vega`
+`yarn add gatsby-transformer-remark rehype-react gatsby-remark-vega`
 
 The process for installing this plugin mimics that of [`gatsby-remark-component`](https://github.com/hebilicious/gatsby-remark-component).
 
@@ -50,11 +50,13 @@ In your template, follow the same technique as showcased in `gatsby-remark-compo
 ```
 // within your markdown template
 import rehypeReact from "rehype-react"
-import { MyComponent } from "../pages/my-component"
+import Vega, { KEY as vegaKey } from "gatsby-remark-vega/Vega";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "my-component": MyComponent }
+  components: {
+    [vegaKey]: Vega,
+  }
 }).Compiler
 ```
 

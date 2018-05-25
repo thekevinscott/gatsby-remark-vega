@@ -29,7 +29,7 @@ class Vega extends Component {
     }
   }
 
-  rerender = () => {
+  rerender() {
     vegaEmbed(this.node, JSON.parse(this.state.spec), {
       actions: false,
       padding: 0,
