@@ -1,0 +1,5 @@
+{
+  "name": "gatsby-remark-vega",
+  "version": "0.1",
+  "keywords": ["vega", "gatsby-transform-remark", "gatsby", "gatsby-plugin"]
+}
