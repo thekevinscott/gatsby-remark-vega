@@ -1,5 +1,13 @@
 {
   "name": "gatsby-remark-vega",
   "version": "0.1.0",
-  "keywords": ["vega", "gatsby-transform-remark", "gatsby", "gatsby-plugin"]
+  "keywords": [
+    "vega",
+    "gatsby-transform-remark",
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "dependencies": {
+    "unist-util-visit": "^1.3.1"
+  }
 }
