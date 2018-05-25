@@ -9,26 +9,24 @@ Adds the ability to include a [Vega](https://vega.github.io/vega/) visualization
 In your markdown, you can include `vega` JSON files like so:
 
 ```
-
 My awesome post needs a chart:
 
 `vega:chart.json`
 
 Look at that chart!
-
 ```
 
 The json file should sit within the same folder as the markdown file.
 
 ## Installation
 
-`gatsby-transformer-remark` can be installed with `npm` or `yarn`:
+The plugin can be installed with `npm` or `yarn`:
 
 `npm install gatsby-transformer-remark gatsby-remark-vega`
 
 `yarn add gatsby-transformer-remark gatsby-remark-vega`
 
-The process for installing this plugin in Gatsby is similar to [`gatsby-remark-component`](https://github.com/hebilicious/gatsby-remark-component).
+The process for installing this plugin mimics that of [`gatsby-remark-component`](https://github.com/hebilicious/gatsby-remark-component).
 
 ### 1.
 Include the plugin in `gatsby-config.js`, as a plugin option for `gatsby-transformer-remark`:

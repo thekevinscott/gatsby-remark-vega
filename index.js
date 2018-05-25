@@ -8,12 +8,11 @@ const escape = txt => txt.replace(/"/g, '&quot;');
 const MARKDOWN_TAG = "vega";
 
 module.exports = (
-  args,
-  pluginOptions = {},
+  {
+    markdownNode,
+    markdownAST,
+  },
 ) => {
-  const {
-    files, markdownNode, markdownAST, pathPrefix, getNode, reporter,
-  } = args;
   visit(markdownAST, `inlineCode`, node => {
     const { value } = node;
 
@@ -28,12 +27,10 @@ module.exports = (
 
       const spec = fs.readFileSync(path, `utf8`);
 
-      const spec2 = '{ "$schema": "https://vega.github.io/schema/vega/v4.json" }';
-
       node.type = `html`;
       node.value = `<vega spec="${escape(spec)}" />`;
     }
   })
 
   return markdownAST;
-}
+};
