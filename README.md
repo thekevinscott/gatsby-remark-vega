@@ -1,6 +1,6 @@
 # gatsby-remark-vega
 
-Adds the ability to include a vega chart from markdown.
+Adds the ability to include a [Vega](https://vega.github.io/vega/) visualization from a markdown file.
 
 ## Usage
 
