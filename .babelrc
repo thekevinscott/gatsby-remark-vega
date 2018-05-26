@@ -3,6 +3,7 @@
     "babel-preset-es2015"
   ],
   "plugins": [
-    "transform-react-jsx"
+    "transform-react-jsx",
+    "transform-es2015-modules-commonjs"
   ]
 }

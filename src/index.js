@@ -34,3 +34,5 @@ module.exports = (
 
   return markdownAST;
 };
+
+export { default as Vega, KEY } from "./Vega";
