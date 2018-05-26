@@ -52,7 +52,7 @@ In your template, follow the same technique as showcased in `gatsby-remark-compo
 ```
 // within your markdown template
 import rehypeReact from "rehype-react"
-import Vega, { KEY as vegaKey } from "gatsby-remark-vega/Vega";
+import Vega, { KEY as VegaKey } from "gatsby-remark-vega/dist/client";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
