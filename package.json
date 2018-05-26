@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-vega",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "vega",
     "gatsby-transform-remark",
@@ -8,8 +8,8 @@
     "gatsby-plugin"
   ],
   "scripts": {
-    "build": "babel src --out-dir dist",
-    "prepublish": "npm run build && cp package.json dist/package.json"
+    "build": "babel src --out-dir dist && cp package.json dist/package.json",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "react": "^16.4.0",
