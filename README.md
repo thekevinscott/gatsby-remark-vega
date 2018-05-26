@@ -2,7 +2,7 @@
 
 Adds the ability to include a [Vega](https://vega.github.io/vega/) visualization from a markdown file.
 
-![An example of an embedded Vega visualization](chart.png)
+![An example of an embedded Vega visualization](https://raw.githubusercontent.com/thekevinscott/gatsby-remark-vega/master/chart.png)
 
 ## Usage
 
