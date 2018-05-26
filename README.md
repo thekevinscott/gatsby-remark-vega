@@ -18,6 +18,8 @@ Look at that chart!
 
 The json file should sit within the same folder as the markdown file.
 
+[An example repo demonstrating the plugin is available](https://github.com/thekevinscott/gatsby-remark-vega-example).
+
 ## Installation
 
 The plugin can be installed with `npm` or `yarn`:
